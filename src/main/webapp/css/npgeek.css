@@ -1,0 +1,289 @@
+body {
+background-color: #000000;
+font-family: sans-serif;
+}
+
+header {
+margin: 25px;
+}
+
+header h1 {
+font-size: 21pt;
+color: #FFFFFF;
+}
+
+header p {
+color: #FFFFFF;
+/font-size: 12pt;/
+}
+
+header img {
+height: 110px;
+}
+
+#imageHeader{
+height: 110px;
+}
+
+nav {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#listImage{
+	border-radius: 50px;
+}
+
+nav h2 {
+color: #FFFFFF;
+padding-left: 60px;
+}
+
+nav p {
+color: #FFFFFF;
+/font-size: 12pt;/
+font-style: italic;
+padding-left: 60px;
+}
+
+nav ul {
+width: 100%;
+}
+
+nav ul li {
+float: left;
+margin-right: 20px;
+background-color: white;
+border-radius: 8px;
+list-style: none;
+text-align: center;
+width: 200px;
+padding-top: 5px;
+padding-bottom: 5px;
+
+}
+
+nav:after {
+clear: both;
+}
+
+li a:hover {
+text-decoration: underline;
+}
+
+#footerText{
+color: white;
+text-align: center;
+}
+
+.main-content {
+background-color: white;
+color: black;
+border-radius: 10px;
+/* width: 85%; */
+margin: 60px 78px;
+min-height: 400px;
+padding-top: 10px;
+padding: 20px;
+}
+
+/*homepage*/
+
+#homepageGrid{
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "image text";
+	border-bottom:1pt solid rgb(170, 170, 170);
+	margin-right: 80px;
+	padding: 20px;	
+	
+}
+strong{
+	margin-left: 20px;
+	padding:20px;
+	
+}
+h1{
+	text-align: center;
+	
+}
+/* Favorite Park View */
+#resultSurveyGrid{
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr;
+	grid-template-areas: "picture parkName vote";
+	border-bottom:1pt solid rgb(170, 170, 170);
+	margin-left: 80px;
+	margin-right: 80px;
+	padding: 20px;
+}
+
+#SurveyParkImage{
+	grid-area: picture;
+	width: 100%;
+	border-radius: 50px;
+}
+
+.SurveyParkName{
+	grid-area: parkName;
+	display:block;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+	
+}
+
+#SurveyVote{
+	grid-area: vote;
+	display: flex;	
+	align-items: center;
+	padding-left: 10px;
+	font-weight: 500;
+	font-size: 20px;
+	color: red;
+}
+
+#VotedBestNationalPark{
+	color: red;	
+	font-size: 15px;
+	
+}
+
+#ThankYouForVoting{
+	text-align: center;
+	color: rgb(20, 50, 200);
+}
+
+
+/* Detail */
+#park{
+font-size: 20pt;	
+}
+#parkdescription{
+	margin-right: 200px;
+}
+
+/* Weather Forecast View */
+#weatherForecastGrid{
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "today day2 day3 day4 day5";
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+}
+
+#day1{
+	grid-area: today;
+	border:1pt solid rgb(170, 170, 170);
+	padding: 20px;
+}
+
+#day2{
+	grid-area: day2;
+	display: flex;
+	border:1pt solid rgb(170, 170, 170);
+	padding: 20px;
+	
+}
+#day3{
+	grid-area: day3;
+	display: flex;
+	border:1pt solid rgb(170, 170, 170);
+	padding: 20px;
+
+}
+#day4{
+	grid-area: day4;
+	display: flex;
+	border:1pt solid rgb(170, 170, 170);
+	padding: 20px;
+}
+#day5{
+	grid-area: day5;
+	display: flex;
+	border:1pt solid rgb(170, 170, 170);
+	padding: 20px;
+}
+
+
+
+#weatherForecastLine{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "today" 
+						"weatherImage"
+						"temperatureLow"
+						"temperatureHigh"
+						"advice";
+}
+
+#imageWeather{
+	grid-area: weatherImage;
+	width: 100%;
+}
+
+#temperatureLow{
+	grid-area: temperatureLow;
+		color: blue;
+			display:flex;
+	justify-content: center;
+	align-items: center;
+		
+}
+
+#temperatureHigh{
+		grid-area: temperatureHigh;
+		color: red;
+			display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#today{
+	grid-area: today;
+	display: flex;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+#advice{
+	grid-area: advice;
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	font-weight: 200;
+	font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buttonToChangeTemperatureUnit{
+	text-align: center;
+}
+
+/* Survey Page */
+.gridSurveyQuestion{
+	display: grid;
+	grid-template-columns: 2fr 4fr 6fr;
+	grid-template-areas:"label field .";
+}
+
+#surveyLabel{
+	grid-area: label;
+}
+
+
+#surveyField{
+	grid-area: field;
+}
